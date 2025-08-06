@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #111;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.darkmode {
+  background-color: #111;
+  color: #fff;
+}
+
+/* ✨ Glitch-Effekt ✨ */
+body.glitch {
+  animation: glitchy 0.1s infinite;
+}
+
+@keyframes glitchy {
+  0% { background-color: #111; transform: translate(0px, 0px) rotate(0deg); }
+  20% { background-color: #222; transform: translate(-2px, 1px) rotate(0.5deg); }
+  40% { background-color: #000; transform: translate(2px, -1px) rotate(-0.5deg); }
+  60% { background-color: #111; transform: translate(-1px, 1px) rotate(0.3deg); }
+  80% { background-color: #222; transform: translate(1px, -2px) rotate(-0.3deg); }
+  100% { background-color: #111; transform: translate(0px, 0px) rotate(0deg); }
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  color: #000;
+}
+body.darkmode textarea {
+  background-color: #222;
+  color: #fff;
+}
+a {
+  color: darkred;
+  text-decoration: none;
+       }
